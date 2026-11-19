@@ -1,0 +1,22 @@
+<section class="hero" style="padding-bottom:16px"><div class="wrap">
+  <span class="eyebrow">🗓️ Rolling 12 months · computed live</span>
+  <h1>Sky Events Calendar</h1>
+  <p class="lead">Full moons and supermoons, meteor shower peaks (with moonlight forecast), solar and lunar eclipses, equinoxes and solstices, planet oppositions and elongations. Tap <strong>+ Calendar</strong> to save any event to your phone.</p>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+  <div class="card" style="margin-bottom:18px">
+    <div class="tabs" id="evTabs" role="tablist">
+      <button class="on" data-f="all">All</button><button data-f="meteor">☄️ Meteor showers</button><button data-f="eclipse">🌑 Eclipses</button><button data-f="moon">🌕 Moon</button><button data-f="planet">🪐 Planets</button><button data-f="season">🌍 Seasons</button>
+    </div>
+    <label class="check"><input type="checkbox" id="starOnly"> Show ⭐ highlights only (supermoons, eclipses, major showers, bright-planet oppositions)</label>
+    <div class="small dim" id="evCount"></div>
+  </div>
+  <div id="events"><p class="muted">Computing the next 12 months of sky events…</p></div>
+  <div class="callout"><h3>Never miss the big ones</h3><p class="muted">Get an email before every eclipse, major meteor shower and aurora storm.</p>
+    <form data-sa-form="newsletter" data-subject="Sky Alerts signup (calendar)" data-ok="You’re subscribed to Sky Alerts!" style="display:flex;gap:10px;flex-wrap:wrap"><input type="email" name="email" placeholder="you@example.com" required style="flex:1;min-width:220px;margin:0"><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off"><button class="btn btn-gold" type="submit">Send me Sky Alerts</button><div class="form-msg" role="status" style="flex-basis:100%"></div></form></div>
+</div></section>
+<section><div class="wrap article">
+  <h2>About these predictions</h2>
+  <p>Moon phases, eclipses, seasons and planetary events are calculated in your browser using the open-source <em>astronomy-engine</em> library, which models the Sun, Moon and planets to about an arcminute. Eclipse entries list the global event; whether you can see it depends on your location — lunar eclipses are visible from anywhere the Moon is above the horizon, while solar eclipses are only visible along specific paths.</p>
+  <p>Meteor-shower dates are the traditional peak nights. Rates are given as ZHR (the ideal hourly rate under perfect skies); expect fewer from towns and when the Moon is bright, which is why each entry includes a moonlight rating. For the best show, get away from lights and look between midnight and dawn. Read our <a href="{R}learn/meteor-shower-guide.html">meteor shower guide</a> and <a href="{R}learn/eclipse-safety-guide.html">eclipse safety guide</a>.</p>
+</div></section>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-root="">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Live Space — ISS Tracker, Rocket Launches, Aurora Forecast &amp; News</title>
+<meta name="description" content="Live ISS position, upcoming rocket launches with countdowns, NOAA aurora Kp forecast, NASA picture of the day and the latest space news.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://star.academy/live.html">
+<meta name="theme-color" content="#060a18">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Star.Academy">
+<meta property="og:title" content="Live Space — ISS Tracker, Rocket Launches, Aurora Forecast &amp; News">
+<meta property="og:description" content="Live ISS position, upcoming rocket launches with countdowns, NOAA aurora Kp forecast, NASA picture of the day and the latest space news.">
+<meta property="og:url" content="https://star.academy/live.html">
+<meta property="og:image" content="https://star.academy/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Live Space — ISS Tracker, Rocket Launches, Aurora Forecast & News", "description": "Live ISS position, upcoming rocket launches with countdowns, NOAA aurora Kp forecast, NASA picture of the day and the latest space news.", "url": "https://star.academy/live.html", "isPartOf": {"@type": "WebSite", "name": "Star.Academy", "url": "https://star.academy/"}}</script>
+</head>
+<body data-page="live">
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div id="interest"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header class="site"><div class="wrap nav">
+<a class="brand" href="index.html" aria-label="Star.Academy home"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffdf9e"/><stop offset="1" stop-color="#ff9f43"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#0b1230" stroke="url(#lg)" stroke-width="3"/><path d="M32 12l5.6 13.2 14.4 1.2-11 9.4 3.4 14L32 42.4 19.6 49.8l3.4-14-11-9.4 14.4-1.2z" fill="url(#lg)"/><circle cx="48" cy="16" r="2" fill="#6ee7ff"/></svg><span>Star<b>.</b>Academy</span></a>
+<nav class="menu" id="menu" aria-label="Main"><a href="index.html">Home</a><a href="tonight.html">Tonight</a><a href="calendar.html">Calendar</a><a href="academy.html">Academy</a><a href="learn/index.html">Learn</a><a href="tools.html">Tools</a><a href="live.html" class="active" aria-current="page">Live</a><a href="videos.html">Videos</a><a href="contests.html">Contests</a><a href="support.html">Support</a><a href="get-started.html" class="btn btn-gold btn-sm" style="margin-left:6px;color:#1b1200">Free Sky Plan</a></nav>
+<div class="navbtns"><button class="iconbtn" data-redmode title="Night-vision (red) mode" aria-label="Toggle night-vision red mode">🔴</button><button class="iconbtn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div></header>
+<main id="main">
+<section class="hero" style="padding-bottom:16px"><div class="wrap">
+  <span class="eyebrow">🛰️ Real-time · auto-refreshing</span>
+  <h1>Live Space Mission Control</h1>
+  <p class="lead">Where the International Space Station is right now, the next rocket launches with countdowns, NOAA’s aurora forecast, NASA’s picture of the day and the latest space headlines.</p>
+</div></section>
+<section style="padding-top:0"><div class="wrap grid g2">
+  <div class="card"><div class="section-head" style="margin-bottom:12px"><h2 class="mb0" style="font-size:1.4rem">🛰️ ISS live position</h2><span class="pill green">updates every 5 s</span></div>
+    <canvas id="issmap" aria-label="ISS position map"></canvas>
+    <div class="kpis" style="margin-top:12px"><div class="kpi"><div class="l">Latitude</div><div class="v" id="issLat">—</div></div><div class="kpi"><div class="l">Longitude</div><div class="v" id="issLon">—</div></div><div class="kpi"><div class="l">Altitude</div><div class="v" id="issAlt">—</div></div><div class="kpi"><div class="l">Speed</div><div class="v" id="issVel">—</div></div></div>
+    <p class="small muted" style="margin-top:10px"><span id="issVis">Connecting…</span> · Shaded area = night side of Earth. <a href="learn/how-to-see-the-iss.html">How to see the ISS</a> · <a href="https://spotthestation.nasa.gov/" target="_blank" rel="noopener">NASA pass predictions</a></p>
+  </div>
+  <div class="card"><div class="section-head" style="margin-bottom:12px"><h2 class="mb0" style="font-size:1.4rem">🖼️ Picture of the day</h2><span class="pill">NASA APOD</span></div><div id="apodBox"><p class="muted">Loading…</p></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap grid g2">
+  <div class="card"><h2 style="font-size:1.4rem">🚀 Upcoming launches</h2><div id="launchBox"><p class="muted">Loading launch schedule…</p></div><p class="tiny dim">Data: The Space Devs Launch Library 2 & RocketLaunch.Live. Times shift often — check provider webcasts.</p></div>
+  <div class="card"><h2 style="font-size:1.4rem">🌈 Aurora & space weather</h2><div id="kpBox"><p class="muted">Loading NOAA forecast…</p></div>
+    <div class="callout" style="margin-bottom:0"><strong>Chasing the aurora?</strong><p class="small muted mb0">We help plan aurora & dark-sky trips. <a href="get-started.html#trip">Tell us your dates →</a></p></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Headlines</span><h2>Latest space news</h2></div></div>
+  <div class="grid g3" id="newsBox"><p class="muted">Loading headlines…</p></div>
+  <p class="tiny dim" style="margin-top:10px">Headlines via the Spaceflight News API; articles open on the original publisher’s site.</p>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<div class="fgrid">
+<div><a class="brand" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffdf9e"/><stop offset="1" stop-color="#ff9f43"/></linearGradient></defs><circle cx="32" cy="32" r="30" fill="#0b1230" stroke="url(#lg)" stroke-width="3"/><path d="M32 12l5.6 13.2 14.4 1.2-11 9.4 3.4 14L32 42.4 19.6 49.8l3.4-14-11-9.4 14.4-1.2z" fill="url(#lg)"/><circle cx="48" cy="16" r="2" fill="#6ee7ff"/></svg><span>Star<b>.</b>Academy</span></a><p class="small muted" style="margin-top:12px">Free astronomy education for everyone on Earth. Look up tonight — we’ll show you where.</p>
+<form data-sa-form="newsletter" data-subject="Sky Alerts signup" data-ok="You’re in! Watch for eclipse, meteor and aurora alerts." style="margin-top:10px"><label for="nlEmail0">Free Sky Alerts (eclipses, meteors, aurora)</label><input id="nlEmail0" type="email" name="email" placeholder="you@example.com" required autocomplete="email"><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off"><button class="btn btn-cyan btn-sm" type="submit">Get alerts</button><div class="form-msg" role="status"></div></form></div>
+<div><h4>Explore</h4><ul><li><a href="tonight.html">Tonight’s Sky</a></li><li><a href="calendar.html">Sky Calendar</a></li><li><a href="live.html">Live Space</a></li><li><a href="videos.html">Video Library</a></li><li><a href="tools.html">Tools</a></li><li><a href="learn/index.html">Guides</a></li></ul></div>
+<div><h4>Get involved</h4><ul><li><a href="get-started.html">Free Stargazing Plan</a></li><li><a href="academy.html">Night Sky 101 Course</a></li><li><a href="contests.html">Monthly Contest</a></li><li><a href="support.html">Donate / Support</a></li><li><a href="sponsor.html">Advertise & Sponsor</a></li><li><a href="careers.html">Careers & Volunteers</a></li></ul></div>
+<div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="disclaimer.html">Disclaimer & Trademarks</a></li><li><a href="https://web.works/contact" target="_blank" rel="noopener">Buy / partner on this domain</a></li></ul></div>
+</div>
+<div class="legal">© <span data-year>2026</span> Star.Academy. All rights reserved. Star.Academy is an independent astronomy-education website. It is <strong>not affiliated with, endorsed by, or connected to</strong> the "Star Academy" television format or its owners (Banijay / Endemol Shine), nor NASA, ESA, NOAA or any brand mentioned; the word "star" is used in its ordinary astronomical sense. Sky data computed with astronomy-engine (MIT). Live data courtesy of public NASA, NOAA SWPC, The Space Devs, RocketLaunch.Live and Spaceflight News APIs. See <a href="disclaimer.html">Disclaimer & Trademarks</a>.</div>
+</div></footer>
+<div id="cookie" role="dialog" aria-label="Cookie notice"><strong>Cookies & ads.</strong> We use cookies, including Google AdSense advertising cookies, to show ads that keep Star.Academy free and to remember your settings. <a href="privacy.html">Privacy Policy</a>.<div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"><button class="btn btn-gold btn-sm" data-cookie="all">Accept</button><button class="btn btn-ghost btn-sm" data-cookie="essential">Essential only</button></div></div>
+<div class="modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="lmTitle"><div class="box"><button class="x" aria-label="Close">×</button><span class="eyebrow">Before you go ✨</span><h3 id="lmTitle">Get your free personalized stargazing plan</h3><p class="muted small">Tell us your goals and budget — we’ll show you what to see tonight, the right gear, and the best sky events ahead. Takes 60 seconds.</p><a class="btn btn-gold" href="get-started.html">Build my free plan →</a></div></div>
+<div id="stickycta"><span class="small"><strong>New to stargazing?</strong> Free plan in 60s</span><a class="btn btn-gold btn-sm" href="get-started.html">Start</a></div>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/vendor/astronomy.browser.min.js" defer></script>
+<script src="assets/js/sky.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>

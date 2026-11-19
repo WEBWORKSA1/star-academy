@@ -1,0 +1,61 @@
+<section class="hero" style="padding-bottom:20px"><div class="wrap">
+  <span class="eyebrow">🌌 Live, computed for your location</span>
+  <h1>Tonight’s Sky</h1>
+  <p class="lead">Visible planets, moon phase, twilight times and a live sky chart for <strong data-locname>your location</strong>. Times are shown in <strong data-tzlabel>local time</strong>.</p>
+  <div class="card" style="margin-top:18px">
+    <div class="grid g3" style="align-items:end">
+      <div><label for="citySel">Choose a city</label><select id="citySel" data-city style="margin:0"></select></div>
+      <div><button class="btn btn-gold" data-geo style="width:100%">📍 Use my exact location</button></div>
+      <form data-latlon style="display:flex;gap:8px;align-items:end"><div><label for="lat">Lat</label><input id="lat" name="lat" inputmode="decimal" placeholder="45.50" style="margin:0"></div><div><label for="lon">Lon</label><input id="lon" name="lon" inputmode="decimal" placeholder="-73.57" style="margin:0"></div><button class="btn btn-ghost" type="submit">Set</button></form>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:10px"><div class="wrap">
+  <div class="kpis">
+    <div class="kpi"><div class="l">Sunset</div><div class="v" id="kSunset">—</div></div>
+    <div class="kpi"><div class="l">Civil dusk (−6°)</div><div class="v" id="kCivil">—</div></div>
+    <div class="kpi"><div class="l">Nautical dusk (−12°)</div><div class="v" id="kNaut">—</div></div>
+    <div class="kpi"><div class="l">Astronomical dark (−18°)</div><div class="v" id="kDark">—</div></div>
+    <div class="kpi"><div class="l">Dark ends</div><div class="v" id="kDarkEnd">—</div></div>
+    <div class="kpi"><div class="l">Sunrise</div><div class="v" id="kSunrise">—</div></div>
+    <div class="kpi"><div class="l">Day length</div><div class="v" id="kDay">—</div></div>
+    <div class="kpi"><div class="l">Moon lit</div><div class="v" id="moonIllum">—</div></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap grid g2">
+  <div class="card">
+    <h2 style="font-size:1.5rem">🌙 The Moon tonight</h2>
+    <div class="skybox"><canvas id="moonCanvas" class="moon" width="240" height="240" aria-label="Moon phase"></canvas>
+      <div><div class="stat" id="moonName" style="font-size:1.5rem">—</div><div class="small muted" id="moonAge"></div><div class="small muted">Rise <strong id="moonRise">—</strong> · Set <strong id="moonSet">—</strong></div></div></div>
+    <h3 style="margin-top:18px">Next phases</h3>
+    <div class="kpis" id="quarters"></div>
+  </div>
+  <div class="card">
+    <h2 style="font-size:1.5rem">💡 Observing tips for tonight</h2>
+    <ul id="tips" class="muted"></ul>
+    <div class="callout" style="margin:14px 0 0"><strong>Not sure what you’re looking at?</strong><p class="small muted mb0">Get a free personal plan with targets for your sky and gear. <a href="{R}get-started.html">Build my plan →</a></p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>🪐 Planets tonight</h2>
+  <div class="table-wrap"><table><thead><tr><th>Planet</th><th>Visibility</th><th>Best view (time · alt · dir)</th><th>Rise</th><th>Set</th><th>Mag</th><th>Constellation</th></tr></thead><tbody id="planetRows"><tr><td colspan="7">Calculating…</td></tr></tbody></table></div>
+  <p class="tiny dim" style="margin-top:8px">“Visible” means at least 8° above the horizon while the Sun is more than 8° below it. Magnitude: lower = brighter; ≤ 6 is naked-eye under dark skies.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="section-head"><div><h2 class="mb0">✨ Interactive sky chart</h2><div class="small muted">Hold it overhead: north at top, east on the left. <span id="chartTime"></span></div></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn btn-ghost btn-sm" id="nowBtn">Now</button><button class="btn btn-ghost btn-sm" id="darkBtn">At darkness</button><button class="btn btn-ghost btn-sm" id="labelBtn">Labels on/off</button></div></div>
+  <canvas id="skychart" aria-label="Sky chart for your location"></canvas>
+  <div style="max-width:640px;margin:14px auto 0"><label for="timeSlider">Time travel: −12 h … +24 h</label><input type="range" id="timeSlider" min="-720" max="1440" step="10" value="0" style="padding:0"></div>
+  <div class="legend"><span>● Stars (size = brightness)</span><span style="color:#ffd9a0">● Planets</span><span style="color:#fff3d6">● Moon</span><span style="color:#9bb4ff">— Constellation lines</span></div>
+</div></section>
+
+<section><div class="wrap article">
+  <h2>How to use tonight’s data</h2>
+  <p>Stargazing really starts at <strong>nautical dusk</strong>, when the brightest stars and planets are easy to see, and gets best after <strong>astronomical darkness</strong>, when the Sun is 18° below the horizon and the sky is as dark as it will get. Faint galaxies and the Milky Way need that true darkness and a Moon that is either thin or below the horizon.</p>
+  <p>Planets are bright and steady. If something brilliant and non-twinkling is low in the west after sunset, it is probably Venus; a bright, steady point high in the sky at midnight is often Jupiter. Use the chart’s time slider to see how the sky turns over the night — everything rises in the east and sets in the west, just like the Sun.</p>
+  <p>Want reminders before big events? Join <a href="{R}get-started.html">Sky Alerts</a> or browse the <a href="{R}calendar.html">12-month calendar</a>.</p>
+</div></section>

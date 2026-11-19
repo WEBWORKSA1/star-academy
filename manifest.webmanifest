@@ -1,0 +1,13 @@
+{
+  "name": "Star.Academy — Learn the Night Sky",
+  "short_name": "Star.Academy",
+  "description": "What's in your sky tonight, sky calendar, live space data and free stargazing lessons.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#060a18",
+  "theme_color": "#060a18",
+  "icons": [
+    {"src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}

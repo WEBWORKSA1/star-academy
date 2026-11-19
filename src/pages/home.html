@@ -1,0 +1,109 @@
+<section class="hero"><div class="wrap split">
+  <div>
+    <span class="eyebrow">★ Free astronomy academy</span>
+    <h1>Learn the night sky — <span class="grad">starting tonight.</span></h1>
+    <p class="lead">See exactly what’s above you right now, never miss a meteor shower, eclipse or supermoon, and go from “which one is Jupiter?” to confident stargazer with free lessons, tools and live space data.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin:22px 0">
+      <a class="btn btn-gold" href="{R}get-started.html">Get my free stargazing plan →</a>
+      <a class="btn btn-ghost" href="{R}tonight.html">What’s up tonight?</a>
+    </div>
+    <div class="kpis" style="max-width:560px">
+      <div class="kpi"><div class="l">Sunset</div><div class="v" id="sunset">—</div></div>
+      <div class="kpi"><div class="l">Truly dark</div><div class="v" id="darkStart">—</div></div>
+      <div class="kpi"><div class="l">Dark until</div><div class="v" id="darkEnd">—</div></div>
+      <div class="kpi"><div class="l">Moon</div><div class="v" id="moonIllum" style="font-size:1rem">—</div></div>
+    </div>
+  </div>
+  <div class="card hi">
+    <div class="section-head" style="margin-bottom:10px"><h3 class="mb0">Your sky tonight</h3><span class="pill" data-locname>—</span></div>
+    <div class="skybox"><canvas id="moonCanvas" class="moon" width="240" height="240" aria-label="Current moon phase"></canvas>
+      <div><div class="stat" id="moonName" style="font-size:1.4rem">—</div><div class="small muted" id="moonAge"></div><div class="small muted">Moonrise <span id="moonRise">—</span> · Moonset <span id="moonSet">—</span></div></div></div>
+    <hr class="sep" style="margin:16px 0">
+    <div class="small muted" style="margin-bottom:6px">Bright planets visible tonight · times in <span data-tzlabel>local time</span></div>
+    <div id="visPlanets" style="display:flex;gap:6px;flex-wrap:wrap">—</div>
+    <hr class="sep" style="margin:16px 0">
+    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><select data-city aria-label="Choose your city" style="margin:0;max-width:220px"></select><button class="btn btn-ghost btn-sm" data-geo>📍 Use my location</button></div>
+  </div>
+</div></section>
+
+<section style="padding-top:10px"><div class="wrap grid g2">
+  <div class="card hi">
+    <span class="eyebrow">Next big sky event</span>
+    <h2 id="nbTitle" style="font-size:1.6rem">Calculating…</h2>
+    <div class="muted" id="nbDate"></div>
+    <div class="countdown" id="nbCount" style="margin:12px 0"></div>
+    <p class="small muted" id="nbDesc"></p>
+    <a class="btn btn-ghost btn-sm" href="{R}calendar.html">Full 12-month sky calendar →</a>
+  </div>
+  <div class="card"><div class="section-head" style="margin-bottom:12px"><h3 class="mb0">Coming up (next 45 days)</h3><a class="small" href="{R}calendar.html">All events</a></div><div id="upcoming"></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Everything in one place</span><h2>Your free observatory, academy and mission control</h2></div></div>
+  <div class="grid g4">
+    <a class="card" href="{R}tonight.html"><span class="icon">🌌</span><h3>Tonight’s Sky</h3><p class="small muted mb0">Planets up now, twilight times and an interactive sky chart for your location.</p></a>
+    <a class="card" href="{R}calendar.html"><span class="icon">🗓️</span><h3>Sky Calendar</h3><p class="small muted mb0">Meteor showers, eclipses, supermoons and planet events — add them to your calendar.</p></a>
+    <a class="card" href="{R}academy.html"><span class="icon">🎓</span><h3>Night Sky 101</h3><p class="small muted mb0">12 short lessons, nightly tasks, quizzes and a shareable certificate. Free.</p></a>
+    <a class="card" href="{R}live.html"><span class="icon">🛰️</span><h3>Live Space</h3><p class="small muted mb0">ISS tracker, rocket launch countdowns, aurora forecast and space news.</p></a>
+    <a class="card" href="{R}tools.html"><span class="icon">🔭</span><h3>Telescope Finder</h3><p class="small muted mb0">5 questions → the right telescope for your budget, sky and goals.</p></a>
+    <a class="card" href="{R}learn/index.html"><span class="icon">📚</span><h3>Beginner Guides</h3><p class="small muted mb0">Moon phases, planets, meteors, aurora, eclipses and phone astrophotography.</p></a>
+    <a class="card" href="{R}videos.html"><span class="icon">▶️</span><h3>Video Library</h3><p class="small muted mb0">The latest videos from NASA, ESA and top science educators — auto-updated.</p></a>
+    <a class="card" href="{R}contests.html"><span class="icon">🏆</span><h3>Monthly Contest</h3><p class="small muted mb0">Shoot the Moon with your phone, sketch the sky — win sponsor-funded prizes.</p></a>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="card hi" style="padding:34px">
+    <div class="split">
+      <div><span class="eyebrow">Free · 60 seconds · personalized</span><h2>Get your personal stargazing plan</h2><p class="muted">Tell us your goal, experience, budget and sky. Instantly get the right gear path, three targets you can see tonight and the best events of the coming months — plus expert follow-up if you want it.</p>
+      <ul class="muted small"><li>✔ Unbiased telescope & binocular advice for your budget</li><li>✔ What to look at tonight from your exact location</li><li>✔ Alerts before eclipses, meteor storms and aurora</li></ul>
+      <a class="btn btn-gold" href="{R}get-started.html">Build my free plan →</a></div>
+      <div class="grid" style="gap:12px">
+        <a class="card" href="{R}get-started.html#event"><strong>🏫 Book a stargazing night</strong><div class="small muted">Schools, scouts, corporate events, weddings & private parties.</div></a>
+        <a class="card" href="{R}get-started.html#telescope-help"><strong>🔭 Telescope buying help</strong><div class="small muted">Talk to an expert before you spend a cent.</div></a>
+        <a class="card" href="{R}get-started.html#trip"><strong>🏜️ Dark-sky trip planning</strong><div class="small muted">Milky Way, aurora and eclipse travel, matched to your dates.</div></a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap grid g2">
+  <div class="card"><div class="section-head" style="margin-bottom:12px"><h3 class="mb0">🖼️ Astronomy Picture of the Day</h3><span class="pill">NASA APOD</span></div><div id="apodBox"><p class="muted">Loading today’s cosmos…</p></div></div>
+  <div class="grid" style="gap:18px">
+    <div class="card"><div class="section-head" style="margin-bottom:12px"><h3 class="mb0">🌈 Aurora outlook</h3><a class="small" href="{R}learn/aurora-northern-lights-guide.html">How to see it</a></div><div id="kpBox"><p class="muted">Loading NOAA data…</p></div></div>
+    <div class="card"><div class="section-head" style="margin-bottom:12px"><h3 class="mb0">🚀 Next launches</h3><a class="small" href="{R}live.html">All live data</a></div><div id="launchBox"><p class="muted">Loading launches…</p></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Fresh from the cosmos</span><h2>Latest space & stargazing videos</h2></div><a class="btn btn-ghost btn-sm" href="{R}videos.html">Video library →</a></div>
+  <div class="grid g3" data-videos="6"><p class="muted">Loading the latest videos…</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Start here</span><h2>Most-read beginner guides</h2></div><a class="btn btn-ghost btn-sm" href="{R}learn/index.html">All guides →</a></div>
+  <div class="grid g3">
+    <a class="card" href="{R}learn/moon-phases-explained.html"><span class="pill gold">Moon</span><h3 style="margin-top:10px">Moon phases explained</h3><p class="small muted mb0">Waxing vs waning, supermoons, blue moons and the best phase for craters.</p></a>
+    <a class="card" href="{R}learn/how-to-choose-your-first-telescope.html"><span class="pill gold">Gear</span><h3 style="margin-top:10px">Your first telescope</h3><p class="small muted mb0">Aperture, mounts and budgets — and the mistakes to avoid.</p></a>
+    <a class="card" href="{R}learn/how-to-find-planets.html"><span class="pill gold">Planets</span><h3 style="margin-top:10px">Find planets tonight</h3><p class="small muted mb0">The twinkle test, the ecliptic and what each planet looks like.</p></a>
+    <a class="card" href="{R}learn/meteor-shower-guide.html"><span class="pill gold">Meteors</span><h3 style="margin-top:10px">Meteor shower guide</h3><p class="small muted mb0">Every major shower, the best viewing hours and how to see more.</p></a>
+    <a class="card" href="{R}learn/aurora-northern-lights-guide.html"><span class="pill gold">Aurora</span><h3 style="margin-top:10px">See the northern lights</h3><p class="small muted mb0">Kp index, forecasts and phone settings for the aurora.</p></a>
+    <a class="card" href="{R}learn/phone-astrophotography.html"><span class="pill gold">Photography</span><h3 style="margin-top:10px">Phone astrophotography</h3><p class="small muted mb0">Shoot the Moon, stars and Milky Way with the phone you own.</p></a>
+  </div>
+</div></section>
+
+<section><div class="wrap grid g4">
+  <div class="card"><span class="icon">💛</span><h3>Keep it free</h3><p class="small muted">Donations fund servers, educators and contest prizes.</p><a class="btn btn-gold btn-sm" href="{R}support.html">Support</a></div>
+  <div class="card"><span class="icon">🏆</span><h3>Win prizes</h3><p class="small muted">Monthly Night Sky Challenge — free to enter.</p><a class="btn btn-ghost btn-sm" href="{R}contests.html">Enter</a></div>
+  <div class="card"><span class="icon">📣</span><h3>Sponsor</h3><p class="small muted">Reach curious stargazers and gear buyers.</p><a class="btn btn-ghost btn-sm" href="{R}sponsor.html">Packages</a></div>
+  <div class="card"><span class="icon">🧑‍🚀</span><h3>Join us</h3><p class="small muted">Writers, video creators, volunteer astronomers.</p><a class="btn btn-ghost btn-sm" href="{R}careers.html">Careers</a></div>
+</div></section>
+
+<section><div class="wrap article">
+  <h2 class="center">Frequently asked questions</h2>
+  <details><summary>What can I see in the night sky tonight?</summary><p class="muted">Open <a href="{R}tonight.html">Tonight’s Sky</a>, choose your city or share your location, and we calculate which planets are up, when it gets dark, the Moon’s phase and rise/set times, and draw a live sky chart — all in your browser.</p></details>
+  <details><summary>Do I need a telescope to start stargazing?</summary><p class="muted">No. Your eyes and a pair of 10×50 binoculars show the Moon’s craters, Jupiter’s moons, star clusters and even the Andromeda Galaxy. Our <a href="{R}academy.html">free course</a> starts with naked-eye skills.</p></details>
+  <details><summary>Is Star.Academy really free?</summary><p class="muted">Yes. The site is supported by advertising, sponsors and voluntary donations so every lesson and tool stays free.</p></details>
+  <details><summary>When is the next meteor shower or eclipse?</summary><p class="muted">Our <a href="{R}calendar.html">Sky Calendar</a> computes the next 12 months of meteor showers, eclipses, full moons and planet events and lets you add each one to your calendar.</p></details>
+  <details><summary>Is this site connected to the “Star Academy” TV show?</summary><p class="muted">No. Star.Academy is an independent astronomy-education website and has no connection with any television format. See our <a href="{R}disclaimer.html">trademark notice</a>.</p></details>
+</div></section>

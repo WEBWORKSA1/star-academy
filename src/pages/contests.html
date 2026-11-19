@@ -1,0 +1,47 @@
+<section class="hero" style="padding-bottom:16px"><div class="wrap split">
+  <div><span class="eyebrow">🏆 Monthly · free to enter · worldwide</span>
+  <h1>The Night Sky Challenge</h1>
+  <p class="lead">Every month we pick a sky theme, you capture or sketch it, and our judges pick winners in four categories. No expensive gear needed — phone photos and pencil sketches are welcome.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-gold" href="#enter">Enter this month</a><a class="btn btn-ghost" href="#rules">Rules</a></div></div>
+  <div class="card hi"><span class="eyebrow">This month’s theme</span><h2 id="theme" style="font-size:1.6rem">—</h2><p class="muted small" id="themeDesc"></p><div class="small">Entries close in</div><div class="countdown" id="closeCd"></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap grid g4">
+  <div class="card"><span class="icon">🌙</span><h3>Moon by Phone</h3><p class="small muted mb0">Any phone, any technique — through a telescope, binoculars or bare.</p></div>
+  <div class="card"><span class="icon">🌌</span><h3>Deep Sky & Wide Field</h3><p class="small muted mb0">Nebulae, galaxies, Milky Way, star trails and nightscapes.</p></div>
+  <div class="card"><span class="icon">✏️</span><h3>Sky Sketch</h3><p class="small muted mb0">Hand-drawn observations of the Moon, planets, comets or clusters.</p></div>
+  <div class="card"><span class="icon">🧒</span><h3>Young Astronomer</h3><p class="small muted mb0">Ages 8–17, entered by a parent or guardian.</p></div>
+</div></section>
+<section><div class="wrap grid g2">
+  <div class="card"><h2 style="font-size:1.5rem">🎁 Prizes</h2><p class="muted">Prizes are funded by sponsors and supporters and announced at the start of each month — typically astronomy gear (binoculars, eyepieces, star atlases, smart-telescope accessories), gift cards, and a feature on our home page and newsletter. Every finalist receives a digital certificate.</p>
+    <p class="small muted">Help grow next month’s prize pool: <a href="{R}support.html#contest">chip in</a> or <a href="{R}sponsor.html">become a contest sponsor</a>.</p></div>
+  <div class="card"><h2 style="font-size:1.5rem">⚖️ Judging</h2><ul class="muted small"><li><strong>40%</strong> — impact & beauty</li><li><strong>30%</strong> — technique relative to equipment (a great phone shot can beat an average observatory image)</li><li><strong>20%</strong> — the story/notes you share about the observation</li><li><strong>10%</strong> — fit with the monthly theme</li></ul><p class="small muted">Judges are experienced amateur astronomers and educators; sponsors never judge.</p></div>
+</div></section>
+<section id="enter"><div class="wrap grid g2" style="align-items:start">
+  <div><h2>Submit your entry</h2><p class="muted">Upload your image to any public host you control (Google Drive / Dropbox share link, Flickr, AstroBin, Instagram post) and paste the link. One entry per category per month.</p><p class="small muted">By entering you confirm the work is your own, captured or drawn by you (or your child), and you grant Star.Academy a non-exclusive license to display it with credit. You keep your copyright.</p></div>
+  <div class="card"><form data-sa-form="contest-entry" data-subject="CONTEST ENTRY — Night Sky Challenge" data-ok="Entry received! Good luck — finalists are announced in the first week of next month.">
+    <div class="row"><div><label for="cName">Name (as credited)</label><input id="cName" name="name" required></div><div><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" required></div></div>
+    <div class="row"><div><label for="cCat">Category</label><select id="cCat" name="category"><option>Moon by Phone</option><option>Deep Sky & Wide Field</option><option>Sky Sketch</option><option>Young Astronomer (guardian submitting)</option></select></div><div><label for="cCountry">Country</label><input id="cCountry" name="country" required></div></div>
+    <label for="cLink">Link to your image</label><input id="cLink" name="image_link" type="url" placeholder="https://" required>
+    <label for="cNotes">Title, date, location & equipment</label><textarea id="cNotes" name="notes" placeholder="e.g. 'Waxing gibbous over the river' — 12 Nov, Montréal, phone through 8-inch Dobsonian"></textarea>
+    <label class="check"><input type="checkbox" name="rules_ok" value="yes" required> I agree to the contest rules, I am 18+ or a parent/guardian submitting for a minor, and the work is original.</label>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
+    <button class="btn btn-gold" type="submit">Submit entry</button><div class="form-msg" role="status"></div></form></div>
+</div></section>
+<section id="rules"><div class="wrap article">
+  <h2>Official rules (summary)</h2>
+  <ol class="muted">
+    <li><strong>No purchase necessary.</strong> Entry is free. A purchase or donation does not improve your chances of winning.</li>
+    <li><strong>Eligibility:</strong> open worldwide to individuals 18+; minors aged 8–17 may enter the Young Astronomer category only via a parent or legal guardian. Void where prohibited or restricted by law. Employees and judges, and their households, are not eligible.</li>
+    <li><strong>Entry period:</strong> from the 1st day of each calendar month 00:00 UTC to the last day 23:59 UTC.</li>
+    <li><strong>Originality:</strong> entries must be the entrant’s own work, captured or created by them, not AI-generated, and must not infringe anyone’s rights. Processing is allowed; composites must be disclosed.</li>
+    <li><strong>Judging & winners:</strong> by the criteria above; decisions are final. Winners are notified by email and must reply within 14 days or an alternate is selected. Prizes are non-transferable; equivalent substitutes may be offered. Winners are responsible for any taxes.</li>
+    <li><strong>License:</strong> entrants keep copyright and grant Star.Academy a non-exclusive, royalty-free license to display entries on the site, newsletter and social channels with credit.</li>
+    <li><strong>Privacy:</strong> entry data is used only to run the contest and as described in our <a href="{R}privacy.html">Privacy Policy</a>.</li>
+  </ol>
+  <p class="small muted">Full terms: <a href="{R}terms.html">Terms of Use</a>. Questions? <a href="{R}contact.html">Contact us</a>.</p>
+</div></section>
+<script>
+(function(){var T=[['Moonrise & Moonset','Capture or sketch the Moon near the horizon — with landscape, buildings or trees.'],['Planet Parade','Any planet — alone, with the Moon, or grouped with others.'],['Winter Hexagon & Orion','Orion and the bright winter stars, or the Orion Nebula up close.'],['Star Trails','Long exposures or stacked frames showing Earth’s rotation.'],['Galaxy Season','Spring galaxies or the Milky Way core — wide or deep.'],['Noctilucent & Twilight Skies','The blue hour, Earth’s shadow, twilight planets.'],['Milky Way Nightscapes','Our galaxy over a landscape.'],['Meteor Hunt','Catch a meteor — or sketch where you saw them.'],['Harvest Moon','Full Moon portraits and moonlit landscapes.'],['Sun Safe','Solar observations with proper filters only.'],['Comets & Clusters','A comet if one is visible, or any star cluster.'],['Geminids & Winter Moon','December meteors or the long winter Moon.']];
+var d=new Date(),t=T[d.getMonth()],el=document.getElementById('theme');el.textContent=d.toLocaleDateString([], {month:'long',year:'numeric'})+': '+t[0];document.getElementById('themeDesc').textContent=t[1];
+var end=new Date(d.getFullYear(),d.getMonth()+1,1);document.addEventListener('DOMContentLoaded',function(){var c=document.getElementById('closeCd');function k(){var ms=end-Date.now(),dd=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4);c.textContent=dd+'d '+h+'h '+m+'m'}k();setInterval(k,30000)});})();
+</script>

@@ -1,0 +1,23 @@
+<section class="hero" style="padding-bottom:16px"><div class="wrap">
+  <span class="eyebrow">🛰️ Real-time · auto-refreshing</span>
+  <h1>Live Space Mission Control</h1>
+  <p class="lead">Where the International Space Station is right now, the next rocket launches with countdowns, NOAA’s aurora forecast, NASA’s picture of the day and the latest space headlines.</p>
+</div></section>
+<section style="padding-top:0"><div class="wrap grid g2">
+  <div class="card"><div class="section-head" style="margin-bottom:12px"><h2 class="mb0" style="font-size:1.4rem">🛰️ ISS live position</h2><span class="pill green">updates every 5 s</span></div>
+    <canvas id="issmap" aria-label="ISS position map"></canvas>
+    <div class="kpis" style="margin-top:12px"><div class="kpi"><div class="l">Latitude</div><div class="v" id="issLat">—</div></div><div class="kpi"><div class="l">Longitude</div><div class="v" id="issLon">—</div></div><div class="kpi"><div class="l">Altitude</div><div class="v" id="issAlt">—</div></div><div class="kpi"><div class="l">Speed</div><div class="v" id="issVel">—</div></div></div>
+    <p class="small muted" style="margin-top:10px"><span id="issVis">Connecting…</span> · Shaded area = night side of Earth. <a href="{R}learn/how-to-see-the-iss.html">How to see the ISS</a> · <a href="https://spotthestation.nasa.gov/" target="_blank" rel="noopener">NASA pass predictions</a></p>
+  </div>
+  <div class="card"><div class="section-head" style="margin-bottom:12px"><h2 class="mb0" style="font-size:1.4rem">🖼️ Picture of the day</h2><span class="pill">NASA APOD</span></div><div id="apodBox"><p class="muted">Loading…</p></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap grid g2">
+  <div class="card"><h2 style="font-size:1.4rem">🚀 Upcoming launches</h2><div id="launchBox"><p class="muted">Loading launch schedule…</p></div><p class="tiny dim">Data: The Space Devs Launch Library 2 & RocketLaunch.Live. Times shift often — check provider webcasts.</p></div>
+  <div class="card"><h2 style="font-size:1.4rem">🌈 Aurora & space weather</h2><div id="kpBox"><p class="muted">Loading NOAA forecast…</p></div>
+    <div class="callout" style="margin-bottom:0"><strong>Chasing the aurora?</strong><p class="small muted mb0">We help plan aurora & dark-sky trips. <a href="{R}get-started.html#trip">Tell us your dates →</a></p></div></div>
+</div></section>
+<section style="padding-top:0"><div class="wrap">
+  <div class="section-head"><div><span class="eyebrow">Headlines</span><h2>Latest space news</h2></div></div>
+  <div class="grid g3" id="newsBox"><p class="muted">Loading headlines…</p></div>
+  <p class="tiny dim" style="margin-top:10px">Headlines via the Spaceflight News API; articles open on the original publisher’s site.</p>
+</div></section>
