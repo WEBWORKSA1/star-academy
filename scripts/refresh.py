@@ -103,36 +103,34 @@ def apod():
 
 
 def apod_page():
+    """Parse the apod.nasa.gov page (NASA Science WordPress template, 2026)."""
     page = get('https://apod.nasa.gov/apod/astropix.html', accept='text/html').decode('utf-8', 'replace')
-    if os.environ.get('APOD_DEBUG'):
-        print('  [debug] page length', len(page))
-        i = page.find('media-detail-hero__media')
-        print('  [debug] HERO', re.sub(r'\s+', ' ', page[max(0, i - 2500):i + 1500])[:4200])
-        for pat in (r'<h1[^>]*>.{0,200}', r'APOD:\s*\d{4}.{0,120}'):
-            for m in re.findall(pat, page, re.I | re.S)[:8]:
-                print('  [debug]', re.sub(r'\s+', ' ', m)[:260])
     clean = lambda s: html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s or ''))).strip()
-    def meta(prop):
-        m = (re.search(r'<meta[^>]+(?:property|name)=["\']%s["\'][^>]+content=["\']([^"\']+)' % re.escape(prop), page, re.I)
-             or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']%s["\']' % re.escape(prop), page, re.I))
-        return html.unescape(m.group(1)).strip() if m else ''
-    title = meta('og:title') or meta('twitter:title')
-    title = re.sub(r'^\s*APOD:\s*\d{4}\s+\w+\s+\d{1,2}\s*[\u2013\u2014-]\s*', '', title)
-    title = re.sub(r'\s*[|\u2013\u2014-]\s*NASA Science\s*$', '', title).strip()
-    img = meta('og:image') or meta('twitter:image')
-    expl = meta('og:description') or meta('description')
-    m = re.search(r'Explanation:\s*</b>(.*?)(?:<p>|</p>)', page, re.I | re.S)
-    if m and len(clean(m.group(1))) > len(expl):
-        expl = clean(m.group(1))
-    if not title or title.lower() in ('nasa science', 'apod'):
-        t = re.search(r'<center>\s*<b>\s*(.*?)\s*</b>', page, re.I | re.S) or re.search(r'<h1[^>]*>(.*?)</h1>', page, re.I | re.S)
-        title = clean(t.group(1)) if t else ''
-    if not img or '/themes/' in img:
-        i = re.search(r'<IMG\s+SRC="([^"]+)"', page, re.I) or re.search(r'<img[^>]+src="([^"]+/wp-content/uploads/[^"]+)"', page, re.I)
-        img = i.group(1) if i else ''
-        if img and not img.startswith('http'):
-            img = 'https://apod.nasa.gov/apod/' + img
-    cr = re.search(r'(?:Image\s+)?Credit(?:\s*&amp;\s*Copyright|\s*&\s*Copyright)?\s*:\s*</b>(.*?)</', page, re.I | re.S)
+    h = page.find('class="hds-media-detail-hero')
+    block = page[h:h + 30000] if h >= 0 else page
+    if os.environ.get('APOD_DEBUG'):
+        print('  [debug] BLOCK', re.sub(r'\s+', ' ', re.sub(r'<svg.*?</svg>', '', block[:6000], flags=re.S))[:2500])
+    img = ''
+    for m in re.finditer(r'<img[^>]+>', block, re.I):
+        tag = m.group(0)
+        src = re.search(r'\s(?:data-src|src)="([^"]+)"', tag)
+        if src and '/themes/' not in src.group(1) and not src.group(1).endswith('.svg'):
+            img = html.unescape(src.group(1)); alt = re.search(r'alt="([^"]*)"', tag)
+            img_alt = html.unescape(alt.group(1)).strip() if alt else ''
+            break
+    else:
+        img_alt = ''
+    title = ''
+    for pat in (r'<h2[^>]*>(.*?)</h2>', r'<h3[^>]*>(.*?)</h3>', r'class="[^"]*hero__heading[^"]*"[^>]*>(.*?)<'):
+        m = re.search(pat, block, re.I | re.S)
+        if m and clean(m.group(1)) and clean(m.group(1)).lower() not in ('astronomy picture of the day', 'nasa science'):
+            title = clean(m.group(1)); break
+    if not title and img_alt and img_alt.lower() not in ('astronomy picture of the day', 'nasa logo'):
+        title = img_alt
+    title = re.sub(r'^APOD:\s*\d{4}\s+\w+\s+\d{1,2}\s*[\u2013\u2014-]\s*', '', title)
+    m = re.search(r'Explanation:\s*</(?:strong|b)>(.*?)</p>', page, re.I | re.S)
+    expl = clean(m.group(1)) if m else ''
+    cr = re.search(r'(?:Credit|Copyright)[^<]{0,40}:</th>\s*<td[^>]*>(.*?)</td>', page, re.I | re.S)
     return {'date': datetime.date.today().isoformat(), 'title': title, 'explanation': expl, 'url': img,
             'hdurl': None, 'media_type': 'image', 'copyright': clean(cr.group(1)) if cr else None}
 
