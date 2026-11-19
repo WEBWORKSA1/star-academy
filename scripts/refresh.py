@@ -115,7 +115,7 @@ def apod_page():
         tag = m.group(0)
         src = re.search(r'\s(?:data-src|src)="([^"]+)"', tag)
         if src and '/themes/' not in src.group(1) and not src.group(1).endswith('.svg'):
-            img = html.unescape(src.group(1)); alt = re.search(r'alt="([^"]*)"', tag)
+            img = re.sub(r'w=\d+&h=\d+', 'w=1280&h=1280', html.unescape(src.group(1))); alt = re.search(r'alt="([^"]*)"', tag)
             img_alt = html.unescape(alt.group(1)).strip() if alt else ''
             break
     else:
