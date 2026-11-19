@@ -85,7 +85,9 @@ def apod():
             j = get_json('https://api.nasa.gov/planetary/apod?api_key=' + key)
             if os.environ.get('APOD_DEBUG'):
                 print('  [debug] api', json.dumps({k: (str(v)[:140] if v else v) for k, v in j.items()}))
-            if j.get('title') and j.get('url'):
+            bad = (not j.get('title') or not j.get('url') or '/themes/' in j.get('url', '')
+                   or j.get('title', '').strip().lower() in ('nasa science', 'astronomy picture of the day'))
+            if not bad:
                 out = {k: j.get(k) for k in ('date', 'title', 'explanation', 'url', 'hdurl', 'media_type', 'copyright')}
                 break
         except Exception as e:
@@ -94,7 +96,8 @@ def apod():
     if out is None:
         print('  api failed (%r), reading apod.nasa.gov page' % err)
         out = apod_page()
-    if not out.get('title') or not out.get('url') or '/themes/' in (out.get('url') or ''):
+    if (not out.get('title') or not out.get('url') or '/themes/' in (out.get('url') or '')
+            or out['title'].strip().lower() in ('nasa science', 'astronomy picture of the day')):
         raise ValueError('invalid APOD data')
     save('apod', out)
 
