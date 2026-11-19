@@ -79,24 +79,50 @@ def step(label, fn):
 # ---------------- APOD ----------------
 def apod():
     key = os.environ.get('NASA_API_KEY') or 'DEMO_KEY'
-    try:
-        j = get_json('https://api.nasa.gov/planetary/apod?api_key=' + key)
-        if not j.get('title'):
-            raise ValueError('empty')
-        out = {k: j.get(k) for k in ('date', 'title', 'explanation', 'url', 'hdurl', 'media_type', 'copyright')}
-    except Exception as e:
-        print('  api failed (%r), scraping apod.nasa.gov' % e)
-        page = get('https://apod.nasa.gov/apod/astropix.html', accept='text/html').decode('utf-8', 'replace')
-        img = re.search(r'<IMG\s+SRC="([^"]+)"', page, re.I)
-        title = re.search(r'<center>\s*<b>\s*(.*?)\s*</b>', page, re.I | re.S)
-        expl = re.search(r'<b>\s*Explanation:\s*</b>(.*?)<p>', page, re.I | re.S)
-        if not (img and title):
-            raise
-        clean = lambda s: html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s))).strip()
-        out = {'date': datetime.date.today().isoformat(), 'title': clean(title.group(1)),
-               'explanation': clean(expl.group(1)) if expl else '', 'url': 'https://apod.nasa.gov/apod/' + img.group(1),
-               'hdurl': None, 'media_type': 'image', 'copyright': None}
+    out, err = None, None
+    for attempt in range(3):
+        try:
+            j = get_json('https://api.nasa.gov/planetary/apod?api_key=' + key)
+            if j.get('title') and j.get('url'):
+                out = {k: j.get(k) for k in ('date', 'title', 'explanation', 'url', 'hdurl', 'media_type', 'copyright')}
+                break
+        except Exception as e:
+            err = e
+            time.sleep(4 * (attempt + 1))
+    if out is None:
+        print('  api failed (%r), reading apod.nasa.gov page' % err)
+        out = apod_page()
+    if not out.get('title') or not out.get('url') or '/themes/' in (out.get('url') or ''):
+        raise ValueError('invalid APOD data')
     save('apod', out)
+
+
+def apod_page():
+    page = get('https://apod.nasa.gov/apod/astropix.html', accept='text/html').decode('utf-8', 'replace')
+    clean = lambda s: html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s or ''))).strip()
+    def meta(prop):
+        m = (re.search(r'<meta[^>]+(?:property|name)=["\']%s["\'][^>]+content=["\']([^"\']+)' % re.escape(prop), page, re.I)
+             or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:property|name)=["\']%s["\']' % re.escape(prop), page, re.I))
+        return html.unescape(m.group(1)).strip() if m else ''
+    title = meta('og:title') or meta('twitter:title')
+    title = re.sub(r'^\s*APOD:\s*\d{4}\s+\w+\s+\d{1,2}\s*[\u2013\u2014-]\s*', '', title)
+    title = re.sub(r'\s*[|\u2013\u2014-]\s*NASA Science\s*$', '', title).strip()
+    img = meta('og:image') or meta('twitter:image')
+    expl = meta('og:description') or meta('description')
+    m = re.search(r'Explanation:\s*</b>(.*?)(?:<p>|</p>)', page, re.I | re.S)
+    if m and len(clean(m.group(1))) > len(expl):
+        expl = clean(m.group(1))
+    if not title or title.lower() in ('nasa science', 'apod'):
+        t = re.search(r'<center>\s*<b>\s*(.*?)\s*</b>', page, re.I | re.S) or re.search(r'<h1[^>]*>(.*?)</h1>', page, re.I | re.S)
+        title = clean(t.group(1)) if t else ''
+    if not img or '/themes/' in img:
+        i = re.search(r'<IMG\s+SRC="([^"]+)"', page, re.I) or re.search(r'<img[^>]+src="([^"]+/wp-content/uploads/[^"]+)"', page, re.I)
+        img = i.group(1) if i else ''
+        if img and not img.startswith('http'):
+            img = 'https://apod.nasa.gov/apod/' + img
+    cr = re.search(r'(?:Image\s+)?Credit(?:\s*&amp;\s*Copyright|\s*&\s*Copyright)?\s*:\s*</b>(.*?)</', page, re.I | re.S)
+    return {'date': datetime.date.today().isoformat(), 'title': title, 'explanation': expl, 'url': img,
+            'hdurl': None, 'media_type': 'image', 'copyright': clean(cr.group(1)) if cr else None}
 
 
 # ---------------- Launches ----------------
