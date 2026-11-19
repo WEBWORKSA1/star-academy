@@ -83,6 +83,8 @@ def apod():
     for attempt in range(3):
         try:
             j = get_json('https://api.nasa.gov/planetary/apod?api_key=' + key)
+            if os.environ.get('APOD_DEBUG'):
+                print('  [debug] api', json.dumps({k: (str(v)[:140] if v else v) for k, v in j.items()}))
             if j.get('title') and j.get('url'):
                 out = {k: j.get(k) for k in ('date', 'title', 'explanation', 'url', 'hdurl', 'media_type', 'copyright')}
                 break

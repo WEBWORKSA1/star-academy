@@ -24,7 +24,7 @@
   function apod(box){
     if(!box) return;
     SA.liveOrCached('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY',function(j){if(!j||!j.title)throw 0;return j},'apod').then(function(a){
-      if(!a||!a.title||!a.url||/\/themes\//.test(a.url)||a.title==='NASA Science') throw 0;
+      if(!a||!a.title||!a.url||/\/themes\//.test(a.url)||a.title==='NASA Science'||a.title==='Astronomy Picture of the Day') throw 0;
       var media=a.media_type==='video'?(a.url&&/youtube|vimeo/.test(a.url)?'<div class="video playing"><iframe src="'+esc(a.url)+'" title="'+esc(a.title)+'" allowfullscreen loading="lazy"></iframe></div>':'<a class="btn btn-ghost" href="'+esc(a.url)+'" target="_blank" rel="noopener">Watch today’s APOD video</a>')
         :'<a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" rel="noopener"><img class="apod-img" loading="lazy" src="'+esc(a.url)+'" alt="'+esc(a.title)+'"></a>';
       box.innerHTML=media+'<h3 style="margin-top:14px">'+esc(a.title)+'</h3><div class="tiny dim">'+esc(a.date||'')+(a.copyright?' · Image credit & copyright: '+esc(a.copyright.trim()):' · Credit: NASA / APOD')+'</div><p class="muted small" style="margin-top:10px">'+esc((a.explanation||'').slice(0,420))+'… <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" rel="noopener">Read on APOD</a></p>';
