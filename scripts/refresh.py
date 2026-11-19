@@ -99,6 +99,11 @@ def apod():
 
 def apod_page():
     page = get('https://apod.nasa.gov/apod/astropix.html', accept='text/html').decode('utf-8', 'replace')
+    if os.environ.get('APOD_DEBUG'):
+        print('  [debug] page length', len(page))
+        for pat in (r'<h[1-3][^>]*>.{0,160}', r'<img[^>]+>', r'Explanation.{0,200}', r'Credit.{0,200}', r'<title>.{0,120}'):
+            for m in re.findall(pat, page, re.I | re.S)[:8]:
+                print('  [debug]', re.sub(r'\s+', ' ', m)[:260])
     clean = lambda s: html.unescape(re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', '', s or ''))).strip()
     def meta(prop):
         m = (re.search(r'<meta[^>]+(?:property|name)=["\']%s["\'][^>]+content=["\']([^"\']+)' % re.escape(prop), page, re.I)

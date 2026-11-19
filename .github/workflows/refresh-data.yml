@@ -28,6 +28,7 @@ jobs:
       - name: Fetch APOD, launches, space weather, news and videos
         env:
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+          APOD_DEBUG: '1'
         run: python3 scripts/refresh.py
 
       - name: Commit changes (if any)
