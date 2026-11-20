@@ -2,7 +2,7 @@
  "launches": [
   {
    "name": "Falcon 9 Block 5 | USSF-317",
-   "net": "2026-11-20T04:32:55Z",
+   "net": "2026-11-20T06:43:59Z",
    "provider": "SpaceX",
    "location": "Vandenberg SFB, CA, USA",
    "status": "Go",
@@ -57,14 +57,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg"
   },
   {
-   "name": "Long March 12 | SatNet LEO Group TBD?",
-   "net": "2026-11-24T07:00:00Z",
-   "provider": "China Aerospace Science and Technology Corporation",
-   "location": "Wenchang Space Launch Site, People's Republic of China",
-   "status": "TBC",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg"
-  },
-  {
    "name": "Long March 2F/G | Shenzhou 24",
    "net": "2026-11-25T00:00:00Z",
    "provider": "China Aerospace Science and Technology Corporation",
@@ -81,6 +73,14 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg"
   },
   {
+   "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
+   "net": "2026-11-27T00:00:00Z",
+   "provider": "Rocket Lab",
+   "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
+   "status": "Go",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg"
+  },
+  {
    "name": "Falcon 9 Block 5 | USSF-380",
    "net": "2026-11-28T04:53:00Z",
    "provider": "SpaceX",
@@ -89,13 +89,13 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg"
   },
   {
-   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
-   "net": "2026-11-29T15:47:00Z",
-   "provider": "SpaceX",
-   "location": "Cape Canaveral SFS, FL, USA",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg"
+   "name": "Kinetica 1 | Unknown Payload",
+   "net": "2026-11-29T01:00:00Z",
+   "provider": "CAS Space",
+   "location": "Haiyang Oriental Spaceport",
+   "status": "TBC",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png"
   }
  ],
- "updated": "2026-11-19T15:44:23+00:00"
+ "updated": "2026-11-20T00:37:11+00:00"
 }
