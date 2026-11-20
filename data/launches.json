@@ -2,19 +2,11 @@
  "launches": [
   {
    "name": "Falcon 9 Block 5 | USSF-317",
-   "net": "2026-11-20T06:43:59Z",
+   "net": "2026-11-21T02:32:00Z",
    "provider": "SpaceX",
    "location": "Vandenberg SFB, CA, USA",
    "status": "Go",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg"
-  },
-  {
-   "name": "Long March 8A | SatNet LEO Group TBD?",
-   "net": "2026-11-20T11:59:00Z",
-   "provider": "China Aerospace Science and Technology Corporation",
-   "location": "Wenchang Space Launch Site, People's Republic of China",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-8a_launch_2_image_20251206093107.jpeg"
   },
   {
    "name": "Long March 6C | Unknown Payload",
@@ -58,11 +50,19 @@
   },
   {
    "name": "Long March 2F/G | Shenzhou 24",
-   "net": "2026-11-25T00:00:00Z",
+   "net": "2026-11-25T00:18:00Z",
    "provider": "China Aerospace Science and Technology Corporation",
    "location": "Jiuquan Satellite Launch Center, People's Republic of China",
-   "status": "TBD",
+   "status": "Go",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_20251129175823.jpg"
+  },
+  {
+   "name": "Long March 2D | Unknown Payload",
+   "net": "2026-11-26T09:35:00Z",
+   "provider": "China Aerospace Science and Technology Corporation",
+   "location": "Xichang Satellite Launch Center, People's Republic of China",
+   "status": "Go",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg"
   },
   {
    "name": "Spectrum | AT-Astra and Others (Spectrum Flight 3)",
@@ -74,7 +74,7 @@
   },
   {
    "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
-   "net": "2026-11-27T00:00:00Z",
+   "net": "2026-11-27T00:05:00Z",
    "provider": "Rocket Lab",
    "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
    "status": "Go",
@@ -97,5 +97,5 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/zhongke-1a_image_20220912002218.png"
   }
  ],
- "updated": "2026-11-20T00:37:11+00:00"
+ "updated": "2026-11-20T15:26:53+00:00"
 }
