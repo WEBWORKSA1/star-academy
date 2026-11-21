@@ -1,6 +1,14 @@
 {
  "articles": [
   {
+   "title": "Live coverage: SpaceX to launch intelligence-gathering satellites for the National Reconnaissance Office",
+   "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
+   "image": "https://spaceflightnow.com/wp-content/uploads/2026/04/20260414-Falcon-9-File.jpg",
+   "site": "Spaceflight Now",
+   "summary": "The NROL-136 mission will be the fourth launch of the year supporting the agency’s proliferated architecture satellite constellation in low Earth orbit. Liftoff from pad 4E at Vandenberg Space Force Base is scheduled during a window that opens at 4:16 a.m. PST (7:16 a.m. EST / 1216 UTC). ",
+   "published": "2026-11-21T16:50:51Z"
+  },
+  {
    "title": "Denmark’s GomSpace Secures €8M Contract for Blue Origin Moon Mission",
    "url": "https://europeanspaceflight.com/denmarks-gomspace-secures-e8m-contract-for-blue-origin-moon-mission/",
    "image": "https://europeanspaceflight.com/wp-content/uploads/2026/11/Denmarks-GomSpace-Secures-8-Million-Euro-Contract-for-Blue-Origin-Moon-Mission.webp",
@@ -87,15 +95,7 @@
    "site": "NASA",
    "summary": "Tropical Cyclone Xavier launched the basin’s storm season with a bang.",
    "published": "2026-11-20T05:01:00Z"
-  },
-  {
-   "title": "Live coverage: SpaceX to launch classified payload for the U.S. Space Force",
-   "url": "https://spaceflightnow.com/2026/11/19/live-coverage-spacex-to-launch-classified-payload-for-the-u-s-space-force-2/",
-   "image": "https://spaceflightnow.com/wp-content/uploads/2026/11/20261119_USSF_317_Vertical.jpg",
-   "site": "Spaceflight Now",
-   "summary": "The mission is the latest in the series of ‘R’ missions tasked by the U.S. Space Force. Liftoff from pad 4 East is scheduled for 8:32 p.m. PST (11:32 p.m. EST / 432 UTC).",
-   "published": "2026-11-19T23:51:47Z"
   }
  ],
- "updated": "2026-11-21T07:06:29+00:00"
+ "updated": "2026-11-21T19:15:08+00:00"
 }
