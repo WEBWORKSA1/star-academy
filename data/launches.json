@@ -1,14 +1,6 @@
 {
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | USSF-317",
-   "net": "2026-11-21T04:20:35Z",
-   "provider": "SpaceX",
-   "location": "Vandenberg SFB, CA, USA",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg"
-  },
-  {
    "name": "Falcon 9 Block 5 | NROL-136",
    "net": "2026-11-22T12:16:00Z",
    "provider": "SpaceX",
@@ -95,7 +87,15 @@
    "location": "Taiyuan Satellite Launch Center, People's Republic of China",
    "status": "Go",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-6c_on_the_la_image_20240507065151.jpg"
+  },
+  {
+   "name": "Falcon 9 Block 5 | USSF-380",
+   "net": "2026-11-29T04:39:00Z",
+   "provider": "SpaceX",
+   "location": "Vandenberg SFB, CA, USA",
+   "status": "Go",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg"
   }
  ],
- "updated": "2026-11-20T23:58:57+00:00"
+ "updated": "2026-11-21T07:06:29+00:00"
 }
