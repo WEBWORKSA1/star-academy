@@ -1,14 +1,6 @@
 {
  "launches": [
   {
-   "name": "Falcon 9 Block 5 | NROL-136",
-   "net": "2026-11-22T12:23:56Z",
-   "provider": "SpaceX",
-   "location": "Vandenberg SFB, CA, USA",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg"
-  },
-  {
    "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
    "net": "2026-11-23T11:09:00Z",
    "provider": "Arianespace",
@@ -49,14 +41,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg"
   },
   {
-   "name": "Spectrum | AT-Astra and Others (Spectrum Flight 3)",
-   "net": "2026-11-26T20:00:00Z",
-   "provider": "Isar Aerospace",
-   "location": "Andøya Spaceport",
-   "status": "TBC",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/spectrum_on_the_image_20250321072643.jpeg"
-  },
-  {
    "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
    "net": "2026-11-27T00:05:00Z",
    "provider": "Rocket Lab",
@@ -95,7 +79,23 @@
    "location": "Vandenberg SFB, CA, USA",
    "status": "Go",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_liftof_image_20260816171423.jpg"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Cygnus CRS-2 NG-25",
+   "net": "2026-11-29T15:50:00Z",
+   "provider": "SpaceX",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "status": "Go",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg"
+  },
+  {
+   "name": "Kuaizhou 11 | Unknown Payload",
+   "net": "2026-11-30T00:00:00Z",
+   "provider": "ExPace",
+   "location": "Jiuquan Satellite Launch Center, People's Republic of China",
+   "status": "TBD",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg"
   }
  ],
- "updated": "2026-11-22T06:46:43+00:00"
+ "updated": "2026-11-22T19:39:30+00:00"
 }
