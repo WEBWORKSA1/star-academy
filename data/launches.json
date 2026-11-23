@@ -1,20 +1,20 @@
 {
  "launches": [
   {
-   "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
-   "net": "2026-11-23T11:09:00Z",
-   "provider": "Arianespace",
-   "location": "Guiana Space Centre, French Guiana",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg"
-  },
-  {
    "name": "Soyuz 2.1b | Progress MS-36 (97P)",
-   "net": "2026-11-24T05:03:00Z",
+   "net": "2026-11-24T10:13:00Z",
    "provider": "Russian Federal Space Agency (ROSCOSMOS)",
    "location": "Baikonur Cosmodrome, Republic of Kazakhstan",
    "status": "TBC",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/soyuz_2.1b_image_20230802085331.jpg"
+  },
+  {
+   "name": "Ariane 64 Block 2 | Amazon Leo (LE-04)",
+   "net": "2026-11-24T11:09:00Z",
+   "provider": "Arianespace",
+   "location": "Guiana Space Centre, French Guiana",
+   "status": "TBC",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_64_lifto_image_20260618063419.jpg"
   },
   {
    "name": "Falcon 9 Block 5 | USSF-266",
@@ -97,5 +97,5 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg"
   }
  ],
- "updated": "2026-11-22T19:39:30+00:00"
+ "updated": "2026-11-23T07:37:48+00:00"
 }
