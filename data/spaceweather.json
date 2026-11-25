@@ -292,32 +292,32 @@
   },
   {
    "t": "2026-11-25T06:00:00",
-   "kp": 2.67,
-   "obs": "estimated"
+   "kp": 2.33,
+   "obs": "observed"
   },
   {
    "t": "2026-11-25T09:00:00",
-   "kp": 3.0,
-   "obs": "estimated"
+   "kp": 2.0,
+   "obs": "observed"
   },
   {
    "t": "2026-11-25T12:00:00",
-   "kp": 2.33,
-   "obs": "estimated"
+   "kp": 0.67,
+   "obs": "observed"
   },
   {
    "t": "2026-11-25T15:00:00",
-   "kp": 2.67,
-   "obs": "estimated"
+   "kp": 1.0,
+   "obs": "observed"
   },
   {
    "t": "2026-11-25T18:00:00",
-   "kp": 3.0,
-   "obs": "estimated"
+   "kp": 1.0,
+   "obs": "observed"
   },
   {
    "t": "2026-11-25T21:00:00",
-   "kp": 3.67,
+   "kp": 4.0,
    "obs": "estimated"
   },
   {
@@ -406,5 +406,5 @@
    "obs": "predicted"
   }
  ],
- "updated": "2026-11-25T08:33:01+00:00"
+ "updated": "2026-11-25T21:42:04+00:00"
 }

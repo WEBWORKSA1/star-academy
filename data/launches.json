@@ -81,21 +81,21 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg"
   },
   {
+   "name": "Falcon 9 Block 5 | CHORUS",
+   "net": "2026-12-04T12:55:00Z",
+   "provider": "SpaceX",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "status": "Go",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg"
+  },
+  {
    "name": "Long March 12 | SatNet LEO Group TBD?",
    "net": "2026-12-10T07:00:00Z",
    "provider": "China Aerospace Science and Technology Corporation",
    "location": "Wenchang Space Launch Site, People's Republic of China",
    "status": "TBC",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg"
-  },
-  {
-   "name": "Ariane 62 | Metop-SG B1",
-   "net": "2026-12-17T00:00:00Z",
-   "provider": "Arianespace",
-   "location": "Guiana Space Centre, French Guiana",
-   "status": "TBD",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg"
   }
  ],
- "updated": "2026-11-25T08:33:01+00:00"
+ "updated": "2026-11-25T21:42:04+00:00"
 }
