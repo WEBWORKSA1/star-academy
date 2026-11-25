@@ -1,14 +1,6 @@
 {
  "launches": [
   {
-   "name": "Long March 2F/G | Shenzhou 24",
-   "net": "2026-11-25T00:18:00Z",
-   "provider": "China Aerospace Science and Technology Corporation",
-   "location": "Jiuquan Satellite Launch Center, People's Republic of China",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/shenzhou_22_lau_image_20251129175823.jpg"
-  },
-  {
    "name": "Long March 2D | Unknown Payload",
    "net": "2026-11-26T09:35:00Z",
    "provider": "China Aerospace Science and Technology Corporation",
@@ -95,7 +87,15 @@
    "location": "Wenchang Space Launch Site, People's Republic of China",
    "status": "TBC",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg"
+  },
+  {
+   "name": "Ariane 62 | Metop-SG B1",
+   "net": "2026-12-17T00:00:00Z",
+   "provider": "Arianespace",
+   "location": "Guiana Space Centre, French Guiana",
+   "status": "TBD",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg"
   }
  ],
- "updated": "2026-11-24T22:26:13+00:00"
+ "updated": "2026-11-25T08:33:01+00:00"
 }
