@@ -1,6 +1,12 @@
 {
  "videos": [
   {
+   "id": "R-ypsGLpgIM",
+   "title": "The Neptune Trojan Discovery Overturned Decades of Models",
+   "channel": "Anton Petrov",
+   "published": "2026-11-25T22:00:13+00:00"
+  },
+  {
    "id": "lGgcxqjEqCA",
    "title": "Revealing Hera's first images of asteroid Dimorphos",
    "channel": "ESA",
@@ -209,12 +215,6 @@
    "title": "Is AI Actually Helping Astronomy? | Q&A 476",
    "channel": "Fraser Cain",
    "published": "2026-11-18T10:07:20+00:00"
-  },
-  {
-   "id": "UEzA1Hk6Msk",
-   "title": "What Modern Science Just Discovered in Ancient Art",
-   "channel": "Anton Petrov",
-   "published": "2026-11-17T22:00:22+00:00"
   },
   {
    "id": "wCRzZ0ccP_0",
@@ -475,5 +475,5 @@
    "published": "2026-05-23T13:18:43+00:00"
   }
  ],
- "updated": "2026-11-25T21:42:04+00:00"
+ "updated": "2026-11-26T08:16:42+00:00"
 }
