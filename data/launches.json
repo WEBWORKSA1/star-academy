@@ -1,14 +1,6 @@
 {
  "launches": [
   {
-   "name": "Long March 2D | Unknown Payload",
-   "net": "2026-11-26T09:35:00Z",
-   "provider": "China Aerospace Science and Technology Corporation",
-   "location": "Xichang Satellite Launch Center, People's Republic of China",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/long2520march25202d_image_20190222031211.jpeg"
-  },
-  {
    "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
    "net": "2026-11-27T00:05:00Z",
    "provider": "Rocket Lab",
@@ -95,7 +87,15 @@
    "location": "Wenchang Space Launch Site, People's Republic of China",
    "status": "TBC",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/cz-12_on_its_la_image_20241128132937.jpg"
+  },
+  {
+   "name": "Ariane 62 | Metop-SG B1",
+   "net": "2026-12-18T00:36:00Z",
+   "provider": "Arianespace",
+   "location": "Guiana Space Centre, French Guiana",
+   "status": "Go",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg"
   }
  ],
- "updated": "2026-11-25T21:42:04+00:00"
+ "updated": "2026-11-26T21:31:32+00:00"
 }

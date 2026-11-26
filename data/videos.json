@@ -1,8 +1,38 @@
 {
  "videos": [
   {
+   "id": "9RX22wW9c_c",
+   "title": "Why you should believe the hype for the EXTREMELY LARGE TELESCOPE (visiting ESO HQ!)",
+   "channel": "Dr. Becky",
+   "published": "2026-11-26T20:00:20+00:00"
+  },
+  {
+   "id": "oe7ot4_DI1I",
+   "title": "Scientists Just Announced There Could Be Life on Venus",
+   "channel": "Astrum",
+   "published": "2026-11-26T17:00:00+00:00"
+  },
+  {
+   "id": "HCnWzKhj_3g",
+   "title": "Ozone hole grows to one of the largest in decades",
+   "channel": "ESA",
+   "published": "2026-11-26T15:30:05+00:00"
+  },
+  {
+   "id": "nCJQZHBkSsU",
+   "title": "Progress 97 Cargo Ship Docking",
+   "channel": "NASA",
+   "published": "2026-11-26T12:19:12+00:00"
+  },
+  {
+   "id": "OMGK9WWa2oM",
+   "title": "Unveiling Gaia’s biggest data release yet",
+   "channel": "ESA",
+   "published": "2026-11-26T09:44:28+00:00"
+  },
+  {
    "id": "R-ypsGLpgIM",
-   "title": "The Neptune Trojan Discovery Overturned Decades of Models",
+   "title": "The Vera Rubin Observatory Just Solved a Decades Old Neptune Mystery",
    "channel": "Anton Petrov",
    "published": "2026-11-25T22:00:13+00:00"
   },
@@ -121,12 +151,6 @@
    "published": "2026-11-21T22:00:27+00:00"
   },
   {
-   "id": "nCJQZHBkSsU",
-   "title": "Progress 97 Cargo Ship Docking",
-   "channel": "NASA",
-   "published": "2026-11-20T22:31:13+00:00"
-  },
-  {
    "id": "rcj39PJq6ko",
    "title": "What Happened to SpaceX Starship 42",
    "channel": "Fraser Cain",
@@ -155,12 +179,6 @@
    "title": "How Voyager Changed Our View of the Solar System (NASA Archival Footage)",
    "channel": "NASA JPL",
    "published": "2026-11-20T15:15:01+00:00"
-  },
-  {
-   "id": "wI61ayczY8w",
-   "title": "Can hydrogen make Ariane 6 greener? | Hyguane project",
-   "channel": "ESA",
-   "published": "2026-11-20T08:30:16+00:00"
   },
   {
    "id": "29zYt-NR11k",
@@ -271,12 +289,6 @@
    "published": "2026-11-12T20:00:23+00:00"
   },
   {
-   "id": "72nUP-tkm7s",
-   "title": "Zoom into Euclid’s 500 gigapixel mosaic of the Universe",
-   "channel": "ESA",
-   "published": "2026-11-12T11:00:39+00:00"
-  },
-  {
    "id": "MKkHDt_Gt7s",
    "title": "Talking NASA's Plans With Jared Isaacman at MAX POWER",
    "channel": "Scott Manley",
@@ -290,7 +302,7 @@
   },
   {
    "id": "MS8eLbSvb3c",
-   "title": "We Found a Super-Fast Flashing Object Orbiting Our Galaxy's Black Hole",
+   "title": "1000s of Our Galaxy's Pulsars Are Missing. Scientists Just Figured Out Why.",
    "channel": "Astrum",
    "published": "2026-11-11T18:00:18+00:00"
   },
@@ -385,12 +397,6 @@
    "published": "2026-10-21T16:00:38+00:00"
   },
   {
-   "id": "c8dfuXDGbB4",
-   "title": "This New Theory of Everything Will Change How You See the Universe",
-   "channel": "Astrum",
-   "published": "2026-10-14T16:00:02+00:00"
-  },
-  {
    "id": "EhsGkgz-Wc8",
    "title": "How Cold Can You Go? | 50x50 Science",
    "channel": "Cool Worlds",
@@ -475,5 +481,5 @@
    "published": "2026-05-23T13:18:43+00:00"
   }
  ],
- "updated": "2026-11-26T08:16:42+00:00"
+ "updated": "2026-11-26T21:31:32+00:00"
 }
