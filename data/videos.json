@@ -1,6 +1,24 @@
 {
  "videos": [
   {
+   "id": "7eH3CzZ_eHQ",
+   "title": "Bizarre Physics Explains Why This Telescope Collapsed",
+   "channel": "Scott Manley",
+   "published": "2026-11-27T19:22:26+00:00"
+  },
+  {
+   "id": "U-RBNbr5TYA",
+   "title": "Claude is Detecting Exoplanets?!",
+   "channel": "Cool Worlds",
+   "published": "2026-11-27T17:02:19+00:00"
+  },
+  {
+   "id": "WnTi-v98H20",
+   "title": "Join us live for Gaia’s biggest data release yet (Teaser)",
+   "channel": "ESA",
+   "published": "2026-11-27T11:43:03+00:00"
+  },
+  {
    "id": "AYuovVcUYwk",
    "title": "Can NASA Save JWST When It Eventually Breaks? | Q&A 478",
    "channel": "Fraser Cain",
@@ -143,12 +161,6 @@
    "title": "The Europa Concept (Official NASA+ Trailer)",
    "channel": "NASA",
    "published": "2026-11-23T16:20:05+00:00"
-  },
-  {
-   "id": "lbWmTQxTdqs",
-   "title": "Join us live for the first images of asteroid Dimorphos",
-   "channel": "ESA",
-   "published": "2026-11-23T14:33:40+00:00"
   },
   {
    "id": "YuE19s4h5eU",
@@ -385,12 +397,6 @@
    "published": "2026-10-22T20:15:02+00:00"
   },
   {
-   "id": "i7YzzE6A26g",
-   "title": "Why neutrino astronomy won the Nobel Prize | Night Sky News October 2026",
-   "channel": "Dr. Becky",
-   "published": "2026-10-22T19:00:14+00:00"
-  },
-  {
    "id": "T9HLYPn59S4",
    "title": "What Is Hiding in the Milky Way's Core?",
    "channel": "Astrum",
@@ -473,13 +479,7 @@
    "title": "Why Technological Civilizations Might Be Insanely Rare",
    "channel": "Cool Worlds",
    "published": "2026-06-10T16:38:28+00:00"
-  },
-  {
-   "id": "FKSdkVIySq0",
-   "title": "We're Finally Unlocking the \"Cosmic Shoreline\"",
-   "channel": "Cool Worlds",
-   "published": "2026-05-23T13:18:43+00:00"
   }
  ],
- "updated": "2026-11-27T08:31:51+00:00"
+ "updated": "2026-11-27T21:17:04+00:00"
 }
