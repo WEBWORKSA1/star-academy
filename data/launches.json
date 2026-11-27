@@ -1,14 +1,6 @@
 {
  "launches": [
   {
-   "name": "Electron | Night Owls Never Sleep (StriX Launch 14)",
-   "net": "2026-11-27T00:05:00Z",
-   "provider": "Rocket Lab",
-   "location": "Rocket Lab Launch Complex 1, Mahia Peninsula, New Zealand",
-   "status": "Go",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/electron_image_20190705175640.jpeg"
-  },
-  {
    "name": "Long March 6A | Unknown Payload",
    "net": "2026-11-27T13:00:00Z",
    "provider": "China Aerospace Science and Technology Corporation",
@@ -41,14 +33,6 @@
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg"
   },
   {
-   "name": "Mir | Demo Flight",
-   "net": "2026-11-30T00:00:00Z",
-   "provider": "Agency for Defense Development",
-   "location": "Sea Launch",
-   "status": "TBD",
-   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/south2520korea_image_20231204145331.png"
-  },
-  {
    "name": "Kinetica 1 | Unknown Payload",
    "net": "2026-12-01T01:45:00Z",
    "provider": "CAS Space",
@@ -58,10 +42,10 @@
   },
   {
    "name": "Kuaizhou 11 | Unknown Payload",
-   "net": "2026-12-01T08:00:00Z",
+   "net": "2026-12-02T11:55:00Z",
    "provider": "ExPace",
    "location": "Jiuquan Satellite Launch Center, People's Republic of China",
-   "status": "TBC",
+   "status": "Go",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/kuaizhou_11_lif_image_20240520155835.jpg"
   },
   {
@@ -95,7 +79,23 @@
    "location": "Guiana Space Centre, French Guiana",
    "status": "Go",
    "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/ariane_62_lifto_image_20240711132056.jpeg"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Amazon Leo (LF-04)",
+   "net": "2026-12-31T00:00:00Z",
+   "provider": "SpaceX",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "status": "TBD",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg"
+  },
+  {
+   "name": "Falcon 9 Block 5 | Globalstar 2-R Mission 2 (x 9)",
+   "net": "2026-12-31T00:00:00Z",
+   "provider": "SpaceX",
+   "location": "Cape Canaveral SFS, FL, USA",
+   "status": "TBD",
+   "image": "https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_image_20230807133459.jpeg"
   }
  ],
- "updated": "2026-11-26T21:31:32+00:00"
+ "updated": "2026-11-27T08:31:51+00:00"
 }

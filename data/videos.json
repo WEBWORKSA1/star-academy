@@ -1,6 +1,18 @@
 {
  "videos": [
   {
+   "id": "AYuovVcUYwk",
+   "title": "Can NASA Save JWST When It Eventually Breaks? | Q&A 478",
+   "channel": "Fraser Cain",
+   "published": "2026-11-27T00:14:34+00:00"
+  },
+  {
+   "id": "oZ8kdAFetU8",
+   "title": "Scientists Recreate Ball Lightning in the Lab, Here's What They Found",
+   "channel": "Anton Petrov",
+   "published": "2026-11-26T22:00:05+00:00"
+  },
+  {
    "id": "9RX22wW9c_c",
    "title": "Why you should believe the hype for the EXTREMELY LARGE TELESCOPE (visiting ESO HQ!)",
    "channel": "Dr. Becky",
@@ -217,12 +229,6 @@
    "published": "2026-11-19T00:29:23+00:00"
   },
   {
-   "id": "GNr71mYtTD8",
-   "title": "Can Gravity Snap and Reconnect Just Like Magnetic Lines?",
-   "channel": "Anton Petrov",
-   "published": "2026-11-18T22:00:07+00:00"
-  },
-  {
    "id": "NiVGpee8M7s",
    "title": "What Voyager 1 Found Beyond the Edge of Our Solar System",
    "channel": "Astrum",
@@ -323,12 +329,6 @@
    "title": "PROMISE: NASA’s Nuclear-Powered Rover for the Moon",
    "channel": "NASA JPL",
    "published": "2026-11-07T22:37:05+00:00"
-  },
-  {
-   "id": "Yfb16658OdQ",
-   "title": "Vera Rubin Delivers Even More BIG Discoveries",
-   "channel": "Fraser Cain",
-   "published": "2026-11-06T20:38:28+00:00"
   },
   {
    "id": "RG5WhPmwGgk",
@@ -481,5 +481,5 @@
    "published": "2026-05-23T13:18:43+00:00"
   }
  ],
- "updated": "2026-11-26T21:31:32+00:00"
+ "updated": "2026-11-27T08:31:51+00:00"
 }
